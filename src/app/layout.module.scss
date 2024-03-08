@@ -1,0 +1,46 @@
+.body {
+  background: linear-gradient(180deg, #fff 35.7%, #d8efff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.body_decor_wrapper {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 140px;
+  @media (width <= 768px) {
+    padding-top: 60px;
+  }
+  @media (width <= 500px) {
+    padding-top: 30px;
+  }
+}
+
+.decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.decor_left {
+  z-index: 5;
+  width: 65%;
+}
+
+.decor_center {
+  z-index: 4;
+  left: 27.8%;
+  width: 48.9%;
+}
+
+.decor_right {
+  z-index: 3;
+  top: -0.9%;
+  left: 31.8%;
+  width: 54.1%;
+}

@@ -1,0 +1,23 @@
+@import '../../styles/mixins.scss';
+
+.text {
+  @include reset-text;
+  @include text-NotoSans-28-700;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22px 80px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #fdd966 0%, #bcd77e 68.54%);
+  text-align: center;
+  @media (width < 1380px) {
+    padding: 22px 40px;
+  }
+  @media (width <= 768px) {
+    @include text-NotoSans-24-700;
+    padding: 22px 40px;
+  }
+  @media (width <= 500px) {
+    @include text-NotoSans-20-700;
+    padding: 12px 20px;
+  }
+}

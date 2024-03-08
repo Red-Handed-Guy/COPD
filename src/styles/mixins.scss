@@ -1,0 +1,84 @@
+@import 'const.scss';
+
+@mixin text-NotoSans-16-400 {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color_font;
+  font-weight: 400;
+}
+
+@mixin text-NotoSans-20-700 {
+  color: $color_font;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin text-NotoSans-18-300 {
+  color: $color_font;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@mixin text-NotoSans-24-400 {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 400;
+  letter-spacing: 0.006em;
+  color: $color_font;
+}
+
+@mixin text-NotoSans-26-400 {
+  color: $color_font;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.014em;
+}
+
+@mixin text-NotoSans-24-700 {
+  @include text-NotoSans-24-400;
+  font-weight: 700;
+}
+
+@mixin text-NotoSans-28-700 {
+  color: $color_font;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+@mixin text-NotoSans-30-700 {
+  color: $color_font;
+  font-size: 30px;
+  letter-spacing: 0.014em;
+  font-weight: 700;
+}
+
+//reset
+@mixin reset-list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+// reset h1-h6, p
+@mixin reset-text {
+  margin: 0;
+}
+
+@mixin reset-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin reset-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin reset-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}

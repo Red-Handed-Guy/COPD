@@ -1,0 +1,20 @@
+@import '../../../styles/mixins.scss';
+
+.info_title {
+  @include reset-text;
+  @include text-NotoSans-30-700;
+  text-align: center;
+  @media (width <= 500px) {
+    @include text-NotoSans-24-700;
+  }
+}
+
+.info_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  @media (width < 1289px) {
+    justify-content: center;
+  }
+}

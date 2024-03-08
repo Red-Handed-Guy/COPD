@@ -1,0 +1,51 @@
+@import '../../../../styles/mixins.scss';
+
+.card {
+  max-width: 367px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(253, 217, 102, 0.25);
+}
+
+.svg {
+  max-width: 134px;
+  height: 134px;
+}
+
+.text_percent {
+  @include reset-text;
+  color: #01457a;
+  font-size: 96px;
+  font-weight: 700;
+  @media (width <= 500px) {
+    font-size: 46px;
+  }
+}
+
+.text_normal {
+  @include reset-text;
+  @include text-NotoSans-26-400;
+  text-align: center;
+  line-height: 34px;
+  span {
+    font-weight: 700;
+  }
+  @media (width <= 500px) {
+    @include text-NotoSans-16-400;
+  }
+}
+
+.text_slim {
+  @include reset-text;
+  @include text-NotoSans-18-300;
+  line-height: 24px;
+  text-align: center;
+  @media (width <= 500px) {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,6 @@
+export interface ICard {
+  Svg: React.VFC<React.SVGProps<SVGSVGElement>>
+  text_percent: string
+  text_normal_jsx: JSX.Element
+  text_slim: string
+}
