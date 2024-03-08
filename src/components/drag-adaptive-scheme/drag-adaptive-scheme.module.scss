@@ -23,6 +23,10 @@
   @media (width < 768px) {
     flex-direction: column;
   }
+  @media (width <= 500px) {
+    flex-direction: column;
+    padding: 10px;
+  }
 }
 
 .arrow_svg {
