@@ -2,7 +2,11 @@
 
 .container {
   position: relative;
+}
+
+.container_wrapper {
   box-sizing: border-box;
+  overflow: hidden;
   padding: 40px 38px;
   display: flex;
   gap: 29px;
@@ -22,7 +26,7 @@
   }
 }
 
-.container_open {
+.container_wrapper_open {
   max-height: 3000px;
   flex-direction: column;
 }

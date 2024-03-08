@@ -22,29 +22,33 @@ const PullOutInformation: FC<IPullOutInformation> = ({
   }
 
   return (
-    <article
-      className={`${styles.container} ${isOpen && styles.container_open}`}
-    >
-      <div className={`${styles.svg_wrapper}`}>
-        <SvgIcon className={styles.svg} />
-        <div className={styles.shield_wrapper}>
-          <div className={styles.shield_wrapper_text}>{ShieldText}</div>
-          <SvgShieldBorder
-            className={`${styles.shield} ${styles.shield_border}`}
-          />
-          <SvgShieldBackground
-            className={`${styles.shield} ${styles.shield_background}`}
-          />
+    <article className={`${styles.container}`}>
+      <div
+        className={`${styles.container_wrapper} ${isOpen && styles.container_wrapper_open}`}
+      >
+        {' '}
+        <div className={`${styles.svg_wrapper}`}>
+          <SvgIcon className={styles.svg} />
+          <div className={styles.shield_wrapper}>
+            <div className={styles.shield_wrapper_text}>{ShieldText}</div>
+            <SvgShieldBorder
+              className={`${styles.shield} ${styles.shield_border}`}
+            />
+            <SvgShieldBackground
+              className={`${styles.shield} ${styles.shield_background}`}
+            />
+          </div>
+        </div>
+        <div
+          className={`${styles.info_container} ${!isOpen && styles.info_container_hidden}`}
+        >
+          {children}
+          <div
+            className={`${styles.info_overflow} ${isOpen && styles.info_overflow_hidden}`}
+          ></div>
         </div>
       </div>
-      <div
-        className={`${styles.info_container} ${!isOpen && styles.info_container_hidden}`}
-      >
-        {children}
-        <div
-          className={`${styles.info_overflow} ${isOpen && styles.info_overflow_hidden}`}
-        ></div>
-      </div>
+
       <button onClick={handleClick} className={styles.button}>
         <SvgHand className={styles.button_svg} />
       </button>
