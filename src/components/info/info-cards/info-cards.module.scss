@@ -12,9 +12,9 @@
 .info_cards {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
-  @media (width < 1289px) {
+  @media (width < 1310px) {
     justify-content: center;
   }
 }

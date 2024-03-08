@@ -18,7 +18,6 @@ const PullOutInformation: FC<IPullOutInformation> = ({
   const [isOpen, setIsOpen] = useState(false)
 
   const handleClick = () => {
-    console.log('hello')
     setIsOpen(!isOpen)
   }
 

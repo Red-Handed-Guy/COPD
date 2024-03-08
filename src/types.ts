@@ -4,3 +4,9 @@ export interface ICard {
   text_normal_jsx: JSX.Element
   text_slim: string
 }
+
+export interface IDrugCard {
+  title?: JSX.Element
+  text: JSX.Element
+  number?: number
+}

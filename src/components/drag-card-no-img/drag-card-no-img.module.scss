@@ -1,0 +1,27 @@
+@import '../../styles/mixins.scss';
+
+.card {
+  max-width: 650px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 40px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #fbfdff 0%, #d8efff 100.86%);
+  box-shadow: 0px 0px 25px 0px rgba(142, 160, 173, 0.35);
+  @media (width <= 500px) {
+    padding: 30px 19px;
+  }
+}
+
+.card_text {
+  @include reset-text;
+  @include text-NotoSans-24-400;
+  text-align: start;
+  @media (width < 900px) {
+    @include text-NotoSans-20-700;
+    font-weight: 400;
+  }
+  @media (width <= 500px) {
+    @include text-NotoSans-16-400;
+  }
+}

@@ -19,7 +19,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 38px;
   @media (max-width: 500px) {
     gap: 20px;
   }

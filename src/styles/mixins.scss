@@ -28,16 +28,16 @@
   color: $color_font;
 }
 
+@mixin text-NotoSans-24-700 {
+  @include text-NotoSans-24-400;
+  font-weight: 700;
+}
+
 @mixin text-NotoSans-26-400 {
   color: $color_font;
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 0.014em;
-}
-
-@mixin text-NotoSans-24-700 {
-  @include text-NotoSans-24-400;
-  font-weight: 700;
 }
 
 @mixin text-NotoSans-28-700 {
@@ -47,10 +47,24 @@
   letter-spacing: 0.01em;
 }
 
+@mixin text-NotoSans-28-500 {
+  color: $color_font;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 122%;
+}
+
 @mixin text-NotoSans-30-700 {
   color: $color_font;
   font-size: 30px;
   letter-spacing: 0.014em;
+  font-weight: 700;
+}
+
+@mixin text-NotoSans-48-700 {
+  color: $color_font;
+  font-size: 48px;
   font-weight: 700;
 }
 

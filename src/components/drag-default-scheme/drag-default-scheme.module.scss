@@ -1,0 +1,28 @@
+.container {
+  @media (width < 1200px) {
+    display: none;
+  }
+  margin-top: 10px;
+}
+
+.drug_cards_wrapper {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.drug_cards_arrows_wrapper {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.drug_cards_arrows_wrapper_margin {
+  margin-bottom: 43px;
+}
+
+.drug_cards_arrows_empty {
+  width: 40%;
+}

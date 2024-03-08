@@ -8,8 +8,15 @@ import InfoCards from '../components/info/info-cards/info-cards'
 import GlistSvg from '@images/pull-out-information/glist.svg'
 import HumanSvg from '@images/pull-out-information/human.svg'
 import ImportantText from '../components/important-text/important-text'
+import DragDefaultScheme from '../components/drag-default-scheme/drag-default-scheme'
+import DragAdaptiveScheme from '../components/drag-adaptive-scheme/drag-adaptive-scheme'
+import {
+  mockDrugCardsNoImg,
+  mockDrugCardsWithImg,
+} from '../mock-data/drug-cards'
 
 export default function Home() {
+
   return (
     <main className={styles.main}>
       <section className={styles.section}>
@@ -45,6 +52,18 @@ export default function Home() {
             Приоритетные направления фармакотерапевтической стратегии при ХОБЛ
             <sup>1</sup>:
           </p>
+          <DragDefaultScheme />
+
+          <DragAdaptiveScheme
+            firstItem={mockDrugCardsWithImg[0]}
+            secondItem={mockDrugCardsWithImg[1]}
+            resultItem={mockDrugCardsNoImg[0]}
+          />
+          <DragAdaptiveScheme
+            firstItem={mockDrugCardsWithImg[1]}
+            secondItem={mockDrugCardsWithImg[2]}
+            resultItem={mockDrugCardsNoImg[1]}
+          />
         </div>
       </section>
     </main>
