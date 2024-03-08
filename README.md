@@ -20,7 +20,10 @@
 
 Задеплоено с помощью **Versel**
 
-**Client:** 
+![Image alt](https://github.com/Red-Handed-Guy/COPD/raw/main/src/images/screencapture1920.png)
+
+
+## Tech stack
 
 ![Static Badge](https://img.shields.io/badge/Next.js-%23000000?style=for-the-badge&logo=Next.js&logoColor=%23FFF)
 ![Static Badge](https://img.shields.io/badge/React-black?style=for-the-badge&logo=React)
